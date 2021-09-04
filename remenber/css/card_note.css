@@ -1,0 +1,113 @@
+.text-info {
+    display: block;
+    width: 100%;
+    background-color: rgb(155, 44, 44);
+    padding: 8px;
+}
+
+.text-info.active {
+    display: none;
+}
+
+.text-info p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*******************
+contenido de notas
+*********************/
+
+.content-note {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 2rem;
+}
+
+
+/*********************************************
+**************************************************/
+
+.card-note {
+    position: relative;
+    width: 100%;
+    background-color: var(--white-lite);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-note h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card-note .btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.card-note .btn-read {
+    margin: auto;
+    display: none;
+}
+
+.card-note .btn-read.active {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px;
+    display: block
+}
+
+.btn-option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn-option .btn-ubdate {
+    width: 40px;
+    padding: 7px;
+    background-color: green;
+}
+
+.btn-option .btn-delete {
+    width: 40px;
+    padding: 7px;
+    background-color: rgb(175, 41, 41);
+}
+
+
+/********************
+        VER TAREA 
+***********************/
+
+.vew-note {
+    position: relative;
+    text-align: justify;
+    padding: 0 5px;
+    margin-top: 20px;
+    z-index: 100;
+}
+
+.vew-note .text {
+    display: none;
+    border-top: 1px solid #808080;
+    margin-top: 10px;
+    transform: translateY(-100%);
+    transition: all .5s ease;
+}
+
+.vew-note .text.active {
+    display: block;
+    z-index: 100;
+    transform: translateY(0);
+    transition: all 20s ease;
+}

@@ -1,0 +1,47 @@
+:root {
+    --font-main: 'Montserrat', sans-serif;
+    --white-lite: #F5F5F5;
+    --black-lite: #353434;
+    --main-lite: #adb8be;
+    --fondo: linear-gradient(90deg, rgb(97, 44, 56) 0%, rgba(67, 62, 150, 1) 82%, rgba(14, 79, 182, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    --grid-lite: #636060a8;
+    --blue: #2177a8;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    font-size: 18px;
+    font-family: var(--font-main);
+}
+
+.cerrar-sesion {
+    position: absolute;
+    right: 0;
+    background-color: rgb(161, 34, 34);
+    padding: 7px;
+    color: var(--white-lite);
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: end;
+    font-size: 13px;
+}
+
+h1 {
+    color: rgba(14, 79, 182, 1);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.contenedor {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
